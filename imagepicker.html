@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image picker - Aliya Andra</title>
+</head>
+
+
+<body>
+    <h1>IMAGE PICKER</h1>
+    <select name="" id="daftar" onchange="tampil()">
+        <option value="">-Piih Hewan-</option>
+        <option value="panda">Panda</option>
+        <option value="musang">Musang</option>
+        <option value="anjing">Anjing</option>
+        <option value="buaya">Buaya</option>
+        <option value="cheetah">Cheetah</option>
+        <option value="gajah">Gajah</option>
+        <option value="harimau">Harimau</option>
+        <option value="kelinci">Kelinci</option>
+        <option value="kucing">Kucing</option>
+        <option value="lumba-lumba">Lumba-lumba</option>
+    </select>
+    <div id="hasil"></div>
+
+    <script>
+        let daftar = document.getElementById("daftar")
+        let hasil = document.getElementById("hasil")
+
+        function tampil() {
+            switch (daftar.value) {
+                case "panda":
+                    hasil.innerHTML = '<img src="Panda.jpg" alt="">'
+                    alert("ini adalah gambar Panda.jpg")
+                    break;
+
+                case "musang":
+                    hasil.innerHTML = '<img src="musang.jpg" alt="">'
+                    alert("ini adalah gambar musang.jpg")
+                    break;
+
+                case "anjing":
+                    hasil.innerHTML = '<img src="anjing.jpg" alt="">'
+                    alert("ini adalah gambar anjing.jpg")
+                    break;
+
+                case "buaya":
+                    hasil.innerHTML = '<img src="buaya.jpg" alt="">'
+                    alert("ini adalah gambar buaya.jpg")
+                    break;
+
+                case "cheetah":
+                    hasil.innerHTML = '<img src="cheetah.jpg" alt="">'
+                    alert("ini adalah gambar cheetah.jpg")
+                    break;
+
+                case "gajah":
+                    hasil.innerHTML = '<img src="gajah.jpg" alt="">'
+                    alert("ini adalah gambar gajah.jpg")
+                    break;
+
+                case "harimau":
+                    hasil.innerHTML = '<img src="harimau.jpg" alt="">'
+                    alert("ini adalah gambar harimau.jpg")
+                    break;
+
+                case "kelinci":
+                    hasil.innerHTML = '<img src="kelinci.jpg" alt="">'
+                    alert("ini adalah gambar kelinci.jpg")
+                    break;
+
+                case "kucing":
+                    hasil.innerHTML = '<img src="kucing.jpg" alt="">'
+                    alert("ini adalah gambar kucing.jpg")
+                    break;
+
+                case "lumba-lumba":
+                    hasil.innerHTML = '<img src="Lumba-lumba.jpg" alt="">'
+                    alert("ini adalah gambar Lumba-lumba.jpg")
+                    break;
+
+                default:
+                    hasil.innerHTML = "PILIH GAMBARNYA GAES"
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>
